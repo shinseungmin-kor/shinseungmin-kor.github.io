@@ -1,0 +1,97 @@
+body{
+    background-color: #2d3436;
+    text-align: center;
+    color: #ecf0f1;
+    padding: 1%;
+}
+
+body::before {
+    content: "";
+    position: absolute; z-index: 1;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.momentum {
+    position: relative; z-index: 1;
+}
+
+.temp {
+    font-weight: 400;
+    font-size: 22px;
+    padding-left: 95%;
+}
+
+.place{
+    font-weight: 350;
+    font-size: 17px;
+    padding-left: 96.7%;
+}
+
+h1{
+    font-size: 112px;
+    margin-top:13%;
+    margin-bottom: 0px;
+}
+
+input {
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    margin: 3px;
+    text-align:center;
+    color: #ecf0f1;
+    border-bottom: 2px solid #ecf0f1;
+    width: 380px;
+    outline: none;
+}
+
+.hidden {
+    display: none;
+}
+
+li{
+    list-style: none;
+    font-size: 20px;
+    color: #ecf0f1;
+}
+
+li:before{
+    display: inline;
+    vertical-align: left;
+    padding: 5px;
+}
+
+button{
+    border: none;
+    background: transparent;
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+}
+
+#quote {
+    margin-top: 13%;
+    position: absolute;
+    width: 100%;
+    /* todo 리스트가 내려올때 고정하는 방법을.. 못찾음 */
+}
+
+.bgImg{
+    position: absolute;
+    top:0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn 0.5s linear;
+}
+
+@keyframes fadeIn{
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity : 1;
+    }
+}

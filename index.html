@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css"/>
+    <title>Momentum</title>
+</head>
+
+<body>
+    <section class="momentum">
+    <!-- 온도와 장소 출력 -->
+    <div>
+    <span class="temp"></span><br />
+    <span class="place"></span>
+    </div>
+
+    <!-- 시계 출력 -->
+    <div class="clock">
+        <h1>00:00:00</h1>
+    </div>
+
+    <!-- 인사말 출력 -->
+        <h2 class="hidden"></h2>
+        <form id="form">
+            <input type="text" placeholder="what`s your name?" />
+        </form>
+
+
+    <!-- TODO리스트 출력 -->
+    <form class="toDoForm">
+        <input type="text" placeholder="What is your main focus for today?" />
+    </form>
+    <ul class="toDoList"></ul>
+
+    <!-- 랜덤명언 출력 -->
+    <div id="quote">
+        <span></span><br />
+        <span></span>
+    </div>
+    </section>
+
+    <script src="weather.js"></script>
+    <script src="clock.js"></script>
+    <script src="greeting.js"></script>
+    <script src="todo.js"></script>
+    <script src="background.js"></script>
+    <script src="quotes.js"></script>
+</body>
+
+</html>
